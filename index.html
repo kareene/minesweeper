@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body onload="initGame()">
+    <h1>Minesweeper</h1>
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <p class="score"></p>
+    <div>
+        <button onclick="undo()">Undo</button>
+    </div>
+    <div class="box level">
+        <form action="">
+            Level:<br/>
+            <input type="radio" name="level" value="Beginner" onclick="changeLevel(4)" checked="checked">Beginner (4*4 with 2 MINES)<br/>
+            <input type="radio" name="level" value="Medium" onclick="changeLevel(8)">Medium (8*8 with 12 MINES)<br/>
+            <input type="radio" name="level" value="Expert" onclick="changeLevel(12)">Expert (12*12 with 30 MINES)<br/>
+        </form>
+    </div>
+    <div class="box lives"></div>
+    <div class="box hint">
+        Hints:<br/>
+        <span onclick="startHint(this)">❓</span>
+        <span onclick="startHint(this)">❓</span>
+        <span onclick="startHint(this)">❓</span>
+    </div>
+    <div class="box safe">
+        <div class="safe-btn" onclick="showSafe()">Safe Cell</div>
+        You Have <span>3</span> Clicks Left
+    </div>
+    <div class="box">
+        <div class="manual-btn" onclick="manualPositionMines()"></div>
+        <div class="manual"></div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/manual.js"></script>
+    <script src="js/safe.js"></script>
+    <script src="js/undo.js"></script>
+    <script src="js/hint.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

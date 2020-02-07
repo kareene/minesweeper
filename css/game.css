@@ -1,0 +1,139 @@
+body {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid grey;
+    background-color: lightgrey;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    height: 30px;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.smiley {
+    font-size: 25px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.timer, .marker {
+    font-size: 20px;
+    color: red;
+    background-color: black;
+    width: 55px;
+    margin-top: 5px;
+}
+
+.marker {
+    float: left;
+}
+
+.timer {
+    float: right;
+}
+
+.cell {
+    width: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.shown {
+    background-color: darkgrey;
+}
+
+.box {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    width: 250px;
+    height: 70px;
+    text-align: left;
+    float: left;
+}
+
+.hint span {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.show-hint {
+    cursor: help;
+}
+
+.lives {
+    line-height: 70px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rebeccapurple;
+    text-align: center;
+}
+
+.safe-cell {
+    box-sizing: border-box;
+    border: 3px solid rebeccapurple;
+}
+
+.manual-btn, .safe-btn {
+    line-height: 40px;
+    background-color: rebeccapurple;
+    border: 1px solid grey;
+    color: darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none; 
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
+}
+
+.four {
+    color: navy;
+}
+
+.five {
+    color: brown;
+}
+
+.six {
+    color: teal;
+}
+
+.seven {
+    color: black;
+}
+
+.eight {
+    color: grey;
+}
